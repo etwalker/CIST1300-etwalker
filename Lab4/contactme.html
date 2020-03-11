@@ -11,36 +11,86 @@
 </head>
 
 <body>
- <form>
+ <form onsubmit = "return false">
+
+ <div class= "form group">
+ <label id= "id-a"> Name </label>
+    <input type "text" id= "input-a" class="form-control" required>
+ </div>
+
+ <br>
+
+ <div class= "form group">
+ <label id= "id-b"> Address </label>
+    <input type "text" id= "input-b" class="form-control"  >
+ </div>
+
+ <br>
+
+ <div class= "form group">
+ <label id= "id-c"> Phone Number </label>
+    <input type "text" id= "input-c" class="form-control" >
+ </div>
+
+ <br>
 
  <div class= "form group">
  <label id= "id-1"> Email Address </label>
-    <input type "email" id= "input-1" class="form-control" >
-
+    <input type "email" id= "input-1" class="form-control" required >
+ </div>
 
 
 <br>
 
 <div class = "form group">
-    <label id= "id-1"> Text Area </label>
-    <input type "textarea" id= "input-2" class="form-control" maxlength="10" >
+    <label id= "id-1"> Questions/Comments </label>
+    <input type "textarea" id= "input-2" class="form-control" required >
 
 </div>
 
- </div>
 
 <div class = "form group">
     <label id= "id-1"> Password </label>
-    <input type "password" id= "input-3" class="form-control" >
+    <input type "password" id= "input-3" class="form-control" maxlength="10" required >
 </div>
 
 <div class = "form group">
 
- <button type ="submit" > Submit </button>
+ <button type ="submit" data-toggle = "modal" data-target = "#myModal"> Submit </button>
 
 </div>
 
+
  </form>
+
+ <div id = "myModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The information you entered has been accepted. Thank you!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+<br><br>
+<a href="aboutme.html"> About Me  </a>
+<br>
+<a href="hobbies.html"> Hobbies  </a>
+<br>
+<a href="index.html"> Index Page  </a>
 
    
 

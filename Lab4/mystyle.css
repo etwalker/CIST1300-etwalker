@@ -1,0 +1,32 @@
+body {
+  background-color: plum;
+}
+
+h1 {
+  color: paleturquoise;
+  margin-left: 20px;
+   font-family: verdana;
+  font-size: 300%;
+}
+
+h2 {
+  color: paleturquoise;
+  margin-left: 20px;
+}
+
+p {
+  border: 1px solid powderblue;
+  padding: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style:bold;
+   border-right: 1em solid black
+}
+
+#contact {
+  border-image: url(border.png) 30 round;
+}
+
+address {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:bold;
+}
