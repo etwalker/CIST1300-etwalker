@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock</title>
+    <script
+            src="https://code.jquery.com/jquery-3.5.0.js"
+            integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id ="stockValue">
+    <p id="p-1"> TESLA: </p>
+    <span id="span-1"></span>
+    <p id ="p-2"> Microsoft </p>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $.getJSON({url: " https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=TSLA&apikey=WPUPS58F0FY1LG7Y", success: function(result){
+               console.log(result);
+            }});
+    })
+</script>
