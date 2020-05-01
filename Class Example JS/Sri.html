@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sriram's quiz</title>
+<!-- Latest compiled and minified CSS -->
+</head>
+<script>
+var test1=5;
+var testArray=[1,2,33,4,5,6,7,8,9,10,22,11];
+console.log(testArray);
+console.log(test1);
+console.log(testArray[4]);
+console.log(testArray[7]);
+var cars=["Tesla", "Toyota", "Ford", "BMW"];
+var number=[1,2,3,3,5]
+console.log(cars);
+console.log(cars[0]);
+console.log(cars.sort());
+console.log(cars.reverse());
+console.log(Date())
+var todayDate=Date();
+// console.log(testArray.sort());
+// console.log(testArray.reverse());
+carEngine();
+var result=add(0,2,3,4);
+console.log(result);
+var multiply=multiplication(0,2,3,4)
+console.log("Multiply With 0:-"+multiply);
+multiply=multiplication(3,2,3,4)
+console.log("Multiply without 0:-"+multiply);
+console.log("Random Number:"+random());
+var randomNumber=[];
+// randomNumber[0]=random();
+// randomNumber[1]=random();
+// randomNumber[2]=random();
+// randomNumber[3]=random();
+// randomNumber[4]=random();
+// randomNumber[5]=random();
+var iterator;
+for(iterator=10;iterator>=1;iterator--)
+{
+console.log("iterator"+iterator);
+randomNumber[iterator]=random();
+}
+console.log("Random Number Array:"+randomNumber);
+function key()
+{
+console.log("Insert me to start the car")
+}
+function carEngine()
+{
+console.log("Once started, I will drive");
+}
+function add( value1, value2, value3,value4)
+{
+var sum=value1+value2+value3+value4
+// console.log(sum);
+return sum;
+}
+function multiplication(value1,value2,value3,value4)
+{
+// var product;
+if(value1==0)
+{
+var product=value2*value3*value4
+}
+else{
+var product=value1*value2*value3*value4
+}
+return product;
+}
+function random()
+{
+// return Math.floor(Math.random()*1001);
+return Math.ceil(Math.random()*1000)
+}
+</script>
+</html>

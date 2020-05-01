@@ -1,0 +1,95 @@
+<html>
+<head>
+	 <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.js"
+            integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+            crossorigin="anonymous"></script>
+	</head>
+    <br>
+<body>
+<p id="number">  </p>
+<button id="b" onclick="random();""> Get Numbers </button>
+<br><br>
+<h2>Curent Date & Time</h2>
+<p id="demo"></p>
+
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<script>
+
+
+function myTimer() {
+    var d = new Date (year, month, date, hour, minute, second);
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML =t;
+    var myVar = setInterval(myTimer, 1000);
+
+}
+
+</script>
+
+<script>
+<p>A script on this page starts this clock:</p>
+<p id="clock"></p>
+
+
+var myClock = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var  e= new Date();
+  var f = e.toLocaleTimeString();
+  document.getElementById("clock").innerHTML = e;
+}
+</script>
+
+
+
+<script>
+$(document).ready(function () {
+    var arr = [];
+        for (var i = 0; i < 20; i++)
+         {
+            arr.push(Math.floor(Math.random() * 100) + 1)
+        }
+        console.log(arr);
+});
+​
+​
+function random () {
+​
+  var arr = [];
+        for (var i = 0; i < 20; i++)
+         {
+            arr.push(Math.floor(Math.random() * 100) + 1)
+        }
+        console.log(arr);
+​
+document.getElementById("number").innerHTML = arr;
+}
+</script>
+<script>
+function printEven(num) {
+  for (let i=1; i<20; i++) {
+    if(i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+
+</script>
+</body>
+
+<style>
+#number {
+font-size:40px;
+}
+#b {
+width:90px;
+height: 55px;
+}
+</style>
+</html>

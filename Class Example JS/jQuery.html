@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Jquery</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<p id="content1"> Content 1</p>
+<p id="content2"> Content 2</p>
+<button id="button1"> Submit </button>
+<button id="button2">Present </button>
+</body>
+</html>
+<script>
+   $(document).ready(function()
+   {
+       console.log("I am here and using jQuery")
+       // $("#content1").setAttribute("class","test1");
+       $("#content1").css("color","red");
+       $("#content1").css("background-color","purple")
+        $("#button1").hide()
+       $("#button2").click(
+           function () {
+               $("#button2").hide()
+               $("#button1").show()
+           }
+       )
+       $("#button1").click(
+           function()
+           {
+               $("#content2").css("background-color","green")
+               $("#content2").css("color","yellow")
+               $("#button2").show()
+               console.log("Button 2 worked")
+           }
+       )
+   })
+</script>
